@@ -7,14 +7,14 @@ body {
     background-color: #222222;
     color: white;
     font-family: 'Montserrat', Arial, sans-serif;
-
     width: 100%;
     max-width: none;
     margin: 0;
     padding: 20px 35px;
-
     transition: background-color 0.4s, color 0.4s;
 }
+
+
 
 h1 {
     color: rgb(255, 166, 0);
@@ -30,6 +30,8 @@ p {
     font-size: 18px;
     line-height: 1.6;
 }
+
+
 
 button {
     background-color: orange;
@@ -48,9 +50,13 @@ button:hover {
     transform: scale(1.05);
 }
 
+
+
 a {
     color: orange;
 }
+
+
 
 nav {
     padding: 15px 0;
@@ -76,6 +82,7 @@ nav a:hover {
     font-size: 16px;
 }
 
+
 img {
     display: block;
     width: 100%;
@@ -83,7 +90,7 @@ img {
     border-radius: 10px;
 }
 
-/* ГАЛЕРЕЯ */
+
 
 .gallery {
     display: grid;
@@ -92,7 +99,7 @@ img {
     width: 100%;
 }
 
-/* КАРТОЧКИ */
+
 
 .card {
     background-color: blueviolet;
@@ -121,20 +128,25 @@ img {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* ПОДВАЛ */
+
 
 footer {
+    width: 100%;
+    grid-column: 1 / -1;
     margin-top: 40px;
-    padding-top: 20px;
+    padding: 20px 0;
     border-top: 2px solid orange;
     text-align: center;
 }
 
 footer p {
+    width: 100%;
+    margin: 15px auto;
     font-size: 16px;
+    text-align: center;
 }
 
-/* СВЕТЛАЯ ТЕМА */
+
 
 body.light {
     background-color: #f5f5f5;
@@ -145,7 +157,6 @@ body.light nav a:hover {
     color: #222222;
 }
 
-/* ПЛАНШЕТЫ */
 
 @media (max-width: 1000px) {
     .gallery {
@@ -153,7 +164,7 @@ body.light nav a:hover {
     }
 }
 
-/* ТЕЛЕФОНЫ */
+
 
 @media (max-width: 650px) {
     body {
